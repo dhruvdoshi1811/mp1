@@ -5,9 +5,163 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MP1</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     </head>
     <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
+        <header>
+            
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="Ranthambore National Park Logo" />
+                        <span class="brand-name">Visit Ranthambore</span>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="#landing">Landing</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#wildlife">Wildlife</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+        <main>
+            <section id="landing">
+                <div class="landing-content">
+                    <h1>Welcome to Ranthambore Jungle Safari</h1>
+                    <p>Experience the beauty of nature in the heart of Rajasthan.</p>
+                    <a href="#booking" class="booksafari-btn">Book Your Safari Now</a>
+                </div>
+            </section>
+            <section id="about">
+                <h1>About Ranthambore National Park</h1>
+                <div class="about-content">
+                    <video class="about-video" preload="auto" poster="assets/leopard.png" muted autoplay loop playsinline>
+                        <source src="assets/leopard.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="about-text">
+                        <h2>Make us your guide in to the wild</h2>
+                        <p>Ranthambore National Park is one of the largest and most renowned national parks in India. It is located in the Sawai Madhopur district of Rajasthan and is famous for its population of Bengal tigers. The park is also home to a variety of other wildlife, including leopards, sloth bears, hyenas, and numerous species of birds.</p>
+                        <p>The park covers an area of approximately 392 square kilometers and features a diverse landscape that includes dense forests, open grasslands, and rocky hills. Visitors can explore the park through guided jeep safaris or canter rides, which provide an opportunity to witness the rich biodiversity and stunning scenery.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="wildlife">
+                <h2>Wildlife</h2>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <figure class="carousel-item">
+                            <img src="assets/tiger.png" alt="Image of a tiger at Ranthambore National Park." />
+                            <figcaption>A majestic tiger in its natural habitat.</figcaption>
+                        </figure>
+                        <figure class="carousel-item">
+                            <img src="assets/leopard.png" alt="Image of a leopard at Ranthambore National Park." />
+                            <figcaption>A cunning leopard in its natural habitat.</figcaption>  
+                        </figure>
+                        <figure class="carousel-item">
+                            <img src="assets/rhino.png" alt="Image of a rhinoceros at Ranthambore National Park." />
+                            <figcaption>A powerful rhinoceros in its natural habitat.</figcaption>
+                        </figure>
+                        <figure class="carousel-item">
+                            <img src="assets/slothbear.png" alt="Image of a sloth bear at Ranthambore National Park." />
+                            <figcaption>A gentle sloth bear in its natural habitat.</figcaption>
+                        </figure>
+                        <figure class="carousel-item">
+                            <img src="assets/nilgai.png" alt="Image of a nilgai at Ranthambore National Park." />
+                            <figcaption>A graceful nilgai in its natural habitat.</figcaption>
+                        </figure>
+                        <figure class="carousel-item">
+                            <img src="assets/chital.png" alt="Image of a chital at Ranthambore National Park." />
+                            <figcaption>A elegant chital in its natural habitat.</figcaption>
+                        </figure>
+                    </div>
+                    <button class="carousel-control prev">&#10094;</button>
+                    <button class="carousel-control next">&#10095;</button>
+
+                </div>
+            
+            </section>
+            <section id="booking">
+                <h2>Booking</h2>
+                <p>Book your visit to Ranthambore National Park today!</p>
+                <div class="packages">
+                    <article class="package-card jeep-package">
+                        <h3>Standard Jeep Safari</h3>
+                        <p>Includes a guided tour of the park and access to the main attractions.</p>
+                        
+                        <button data-modal-target="jeep-package-modal">View Details</button>
+                    </article>
+                    <article class="package-card canter-package">
+                        <h3>Canter Safari</h3>
+                        <p>Explore the park with a group in a spacious open-top canter.</p>
+
+                        <button data-modal-target="canter-package-modal">View Details</button>
+                    </article>
+                    <article class="package-card photography-package">
+                        <h3>Standard Photography Package</h3>
+                        <p>Capture the beauty of the park with our professional photography session.</p>
+
+                        <button data-modal-target="photography-package-modal">View Details</button>
+                    </article>
+                </div>
+
+                <div class="modal" id="jeep-package-modal">
+                    <div class="modal-content">
+                        <button class="modal-close">&times;</button>
+                        <h3>Jeep Safari</h3>
+                        <p>Explore Ranthambore National Park in an open-top jeep with an experienced guide.</p>
+                        <ul>
+                            <li>Duration: 3 hours</li>
+                            <li>Capacity: Up to 6 people</li>
+                            <li>Guided safari included</li>
+                            <li>Price: $50 per person</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal" id="canter-package-modal">
+                    <div class="modal-content">
+                        <button class="modal-close">&times;</button>
+                        <h3>Canter Safari</h3>
+                        <p>Ride through Ranthambore in a 20-seater open-top canter with a trained naturalist, a budget-friendly way to spot tigers, leopards and birdlife.</p>
+                        <ul>
+                            <li>Duration: 3 hours</li>
+                            <li>Capacity: Up to 20 people</li>
+                            <li>Naturalist guide included</li>
+                            <li>Price: $30 per person</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal" id="photography-package-modal">
+                    <div class="modal-content">
+                        <button class="modal-close">&times;</button>
+                        <h3>Photography Package</h3>
+                        <p>Capture the beauty of the park with our professional photography session.</p>
+                        <ul>
+                            <li>Duration: 3 hours</li>
+                            <li>Capacity: Up to 6 people</li>
+                            <li>Photography session included</li>
+                            <li>Price: $90 per person</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <p><i class="fa-solid fa-location-dot"></i> Ranthambore Jungle Safari, Sawai Madhopur, Rajasthan</p>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+                <p>Ranthambore Jungle Safari</p>
+            </div>
+        </footer>
     </body>
 </html>
